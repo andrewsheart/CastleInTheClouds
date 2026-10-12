@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Join · Living Better, Together</title>
+<meta name="description" content="Join Living Better, Together. Come as you are.">
+<meta property="og:title" content="Join · Living Better, Together">
+<meta property="og:description" content="Join Living Better, Together. Come as you are.">
+<meta property="og:image" content="assets/cover.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<nav class="nav" aria-label="Site">
+  <a class="wordmark" href="index.html"><span class="star" aria-hidden="true"></span><span class="wm-text">Living Better, Together</span></a>
+  <div class="nav-links">
+    <a href="manifesto.html">Manifesto</a>
+    <a href="explore.html">Explore</a>
+    <a href="about.html">About</a>
+    <a class="nav-join" href="join.html" aria-current="page">Join</a>
+  </div>
+</nav>
+
+<main id="content">
+<section class="join join-page" aria-labelledby="join-title">
+  <div class="frame join-grid">
+    <div class="invite">
+      <p class="eyebrow">An invitation</p>
+      <h2 id="join-title">Come as you are.</h2>
+      <p class="lead">Bring your questions, your experience, and your willingness to listen. Sit down at the table. Bring your art. Receive another&rsquo;s. Let connection become not an escape from life, but a way of living it.</p>
+      <p class="signed">Berend &amp; Andrew</p>
+    </div>
+
+    <div class="join-card">
+      <div class="tabs" role="tablist" aria-label="Membership">
+        <button type="button" role="tab" id="tab-join" aria-selected="true" aria-controls="form-join">Create account</button>
+        <button type="button" role="tab" id="tab-signin" aria-selected="false" aria-controls="form-signin" tabindex="-1">Sign in</button>
+      </div>
+      <p class="preview-note">Preview: accounts aren&rsquo;t live yet. Nothing you type here is saved or sent anywhere.</p>
+
+      <form class="form" id="form-join" role="tabpanel" aria-labelledby="tab-join" novalidate>
+        <div class="field">
+          <label for="username">Username</label>
+          <div class="control"><span class="prefix" aria-hidden="true">@</span><input class="has-prefix" id="username" name="username" type="text" autocomplete="username" placeholder="yourname" aria-describedby="username-err" spellcheck="false" autocapitalize="none"></div>
+          <p class="err" id="username-err" hidden></p>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <div class="control"><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" aria-describedby="email-err" spellcheck="false" autocapitalize="none"></div>
+          <p class="err" id="email-err" hidden></p>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="control"><input class="has-toggle" id="password" name="password" type="password" autocomplete="new-password" placeholder="At least 10 characters" aria-describedby="password-hint password-err"><button type="button" class="toggle" data-toggle="password" aria-controls="password" aria-pressed="false">Show</button></div>
+          <div class="meter" id="meter" data-level="0" aria-hidden="true"><i></i><i></i><i></i></div>
+          <p class="hint" id="password-hint">Use 10 or more characters. A mix of letters, numbers, and symbols is stronger.</p>
+          <p class="err" id="password-err" hidden></p>
+        </div>
+        <label class="check" for="agree">
+          <input type="checkbox" id="agree" name="agree" aria-describedby="agree-err">
+          <span>I&rsquo;ve read the <a href="manifesto.html">manifesto</a> and will help hold the space with consent, care, and mutual respect.</span>
+        </label>
+        <p class="err" id="agree-err" hidden></p>
+        <button class="btn btn-gold" type="submit" id="join-submit">Create account</button>
+        <p class="status" id="join-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <form class="form" id="form-signin" role="tabpanel" aria-labelledby="tab-signin" novalidate hidden>
+        <div class="field">
+          <label for="signin-id">Username or email</label>
+          <div class="control"><input id="signin-id" name="signin-id" type="text" autocomplete="username" spellcheck="false" autocapitalize="none"></div>
+        </div>
+        <div class="field">
+          <label for="signin-password">Password</label>
+          <div class="control"><input class="has-toggle" id="signin-password" name="signin-password" type="password" autocomplete="current-password"><button type="button" class="toggle" data-toggle="signin-password" aria-controls="signin-password" aria-pressed="false">Show</button></div>
+        </div>
+        <button class="btn btn-gold" type="submit" id="signin-submit">Sign in</button>
+        <p class="status" id="signin-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="welcome" id="welcome" hidden tabindex="-1">
+        <span class="star" aria-hidden="true"></span>
+        <h3 id="welcome-title">Welcome to the table.</h3>
+        <p>This was a preview of the sign-up flow, so no account was created and nothing was stored. When the community opens, this form will create your membership and invite you to calls as they&rsquo;re scheduled.</p>
+        <button class="btn btn-ghost" type="button" id="welcome-back">Back to the form</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="frame">
+    <p>Living Better, Together &middot; A founding manifesto by Berend Custers and Andrew Stenger. Working draft, 2026. The community&rsquo;s name and launch details are still being decided.</p>
+    <div class="footer-links"><a href="index.html">Home</a><a href="manifesto.html">Manifesto</a><a href="explore.html">Explore</a><a href="about.html">About</a><a href="join.html">Join</a></div>
+  </div>
+</footer>
+<script src="assets/site.js" defer></script>
+</body>
+</html>
