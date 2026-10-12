@@ -1,0 +1,4 @@
+# Netlify settings for Living Better, Together.
+# The site is plain HTML in the Website folder, so there is nothing to build.
+[build]
+  publish = "Website"
